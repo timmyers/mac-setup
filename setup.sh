@@ -33,14 +33,44 @@ brew cask install brave-browser
 # Install spotify
 brew cask install spotify
 
-# Install jq
-brew install jq
-
 # Install zsh
 brew install zsh
+echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
+
+# Install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Overwrite ~/.zshrc
+curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.zshrc -o ~/.zshrc
 
 # Install Hyper terminal
 brew cask install hyper
 # Configure hyper
 curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.hyper.js -o ~/.hyper.js
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
+source ~/.zshrc
+
+# Install latest node
+nvm install 11
+
+# Install pure prompt
+npm install --global pure-prompt
+echo "" >> ~/.zshrc
+echo "autoload -U promptinit; promptinit" >> ~/.zshrc
+echo "prompt pure" >> ~/.zshrc
+source ~/.zshrc
+
+# Install jq, yq
+brew install jq
+brew install yq
+
+# Install pulumi
+brew install pulumi
+
+# Install terraform
+brew install terraform
+
+# Install newer git
+brew install git
