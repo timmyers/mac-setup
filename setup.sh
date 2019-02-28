@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Dock config
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.25
+killall Dock
+
 # Install Xcode dev tools
 xcode-select --install
 
@@ -7,16 +12,34 @@ xcode-select --install
 which brew || \
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Tap homebrew cask
-brew tap homebrew/cask
-
 # Install spectacle window manager
 brew cask install spectacle
 
 # Install slack
 brew cask install slack
 
-# Dock config
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -float 0.25
-killall Dock
+# Install VSCode
+brew cask install visual-studio-code
+# Install VSCode extensions
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension vscodevim.vim
+code --install-extension mauve.terraform
+code --install-extension codezombiech.gitignore
+code --install-extension mikestead.dotenv
+
+# Install brave browser
+brew cask install brave-browser
+
+# Install spotify
+brew cask install spotify
+
+# Install jq
+brew install jq
+
+# Install zsh
+brew install zsh
+
+# Install Hyper terminal
+brew cask install hyper
+# Configure hyper
+hyper i hyper-snazzy
