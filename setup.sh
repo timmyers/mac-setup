@@ -15,3 +15,8 @@ brew cask install spectacle
 
 # Install slack
 brew cask install slack
+
+# Dock config
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.25
+killall Dock
