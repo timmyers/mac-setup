@@ -38,8 +38,9 @@ brew install jq
 
 # Install zsh
 brew install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Hyper terminal
 brew cask install hyper
 # Configure hyper
-hyper i hyper-snazzy
+curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.hyper.js -o ~/.hyper.js
