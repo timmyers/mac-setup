@@ -74,3 +74,6 @@ brew install terraform
 
 # Install newer git
 brew install git
+
+# Install yarn
+brew install yarn
