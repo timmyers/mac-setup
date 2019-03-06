@@ -87,5 +87,12 @@ echo "" >> ~/.zshrc
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 source ~/.zshrc
 
-# Install google-cloud==-sdk
+# Install google-cloud-sdk
 brew cask intall google-cloud-sdk
+
+# Install helm
+brew install kubernetes-helm
+helm init --client-only
+
+# Install kubectl
+brew install kubectl
