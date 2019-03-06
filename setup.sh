@@ -77,3 +77,9 @@ brew install git
 
 # Install yarn
 brew install yarn
+
+# Install gcloud
+brew install gcloud
+
+# Install pyenv
+brew install pyenv
