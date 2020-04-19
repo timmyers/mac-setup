@@ -111,6 +111,9 @@ brew cask install 1password
 # Install tunnelblick
 brew cask install tunnelblick
 
+# Install karabiner
+brew cask install karabiner-elements
+
 # Install spectacle
 brew cask install spectacle
 
