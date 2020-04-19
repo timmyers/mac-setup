@@ -26,6 +26,8 @@ code --install-extension vscodevim.vim
 code --install-extension mauve.terraform
 code --install-extension codezombiech.gitignore
 code --install-extension mikestead.dotenv
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-vscode.go
 
 # Install brave browser
 brew cask install brave-browser
@@ -62,24 +64,26 @@ echo "autoload -U promptinit; promptinit" >> ~/.zshrc
 echo "prompt pure" >> ~/.zshrc
 source ~/.zshrc
 
-# Install jq, yq
+# Brew utils
 brew install jq
 brew install yq
-
-# Install pulumi
+brew install wget
 brew install pulumi
-
-# Install terraform
 brew install terraform
-
-# Install newer git
 brew install git
-
-# Install yarn
 brew install yarn
+brew install watchman
+brew install golangci/tap/golangci-lint
+
+# Global npm packages
+yarn global add wscat
 
 # Install gcloud
 brew install gcloud
+
+# Install aws
+brew install awscli
+brew install aws-iam-authenticator
 
 # Install pyenv
 brew install pyenv
@@ -88,7 +92,7 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 source ~/.zshrc
 
 # Install google-cloud-sdk
-brew cask intall google-cloud-sdk
+brew cask install google-cloud-sdk
 
 # Install helm
 brew install kubernetes-helm
@@ -96,3 +100,9 @@ helm init --client-only
 
 # Install kubectl
 brew install kubectl
+
+# Install 1password
+brew cask install 1password
+
+# Install docker
+brew cask install docker
