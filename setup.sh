@@ -103,9 +103,16 @@ helm init --client-only
 
 # Install kubectl
 brew install kubectl
+brew install k9s
 
 # Install 1password
 brew cask install 1password
+
+# Install tunnelblick
+brew cask install tunnelblick
+
+# Install spectacle
+brew cask install spectacle
 
 # Install docker
 brew cask install docker
