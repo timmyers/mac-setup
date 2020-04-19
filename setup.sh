@@ -55,7 +55,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | z
 source ~/.zshrc
 
 # Install latest node
-nvm install 11
+nvm install 13
 
 # Install pure prompt
 npm install --global pure-prompt
@@ -70,10 +70,13 @@ brew install yq
 brew install wget
 brew install pulumi
 brew install terraform
+brew install tfenv
 brew install git
 brew install yarn
 brew install watchman
 brew install golangci/tap/golangci-lint
+brew install azure-cli
+brew install go
 
 # Global npm packages
 yarn global add wscat
@@ -106,3 +109,6 @@ brew cask install 1password
 
 # Install docker
 brew cask install docker
+
+# Install notion
+brew cask install notion
