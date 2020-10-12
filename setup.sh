@@ -10,7 +10,7 @@ xcode-select --install
 
 # Install brew
 which brew || \
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Install desktop GUI apps
 brew cask install spectacle
