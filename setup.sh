@@ -23,7 +23,6 @@ brew cask install google-cloud-sdk
 brew cask install 1password
 brew cask install tunnelblick
 brew cask install karabiner-elements
-brew cask install spectacle
 brew cask install docker
 brew cask install notion
 
