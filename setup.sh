@@ -61,7 +61,6 @@ brew install yq
 brew install wget
 brew install git
 brew install watchman
-brew install gcloud
 brew install awscli
 brew install aws-iam-authenticator
 
