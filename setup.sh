@@ -48,13 +48,6 @@ curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.zsh
 # Configure hyper
 curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.hyper.js -o ~/.hyper.js
 
-# Install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
-source ~/.zshrc
-
-# Install latest node
-nvm install 13
-
 # Install pure prompt
 npm install --global pure-prompt
 echo "" >> ~/.zshrc
