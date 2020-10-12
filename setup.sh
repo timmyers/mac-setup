@@ -58,11 +58,14 @@ source ~/.zshrc
 # Brew utils
 brew install jq
 brew install yq
+brew install curl
+brew install coreutils
 brew install wget
 brew install git
 brew install watchman
 brew install awscli
 brew install aws-iam-authenticator
+brew install asdf
 
-# Global npm packages
-yarn global add wscat
+# Add asdf to shell
+echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
