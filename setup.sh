@@ -12,14 +12,21 @@ xcode-select --install
 which brew || \
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install spectacle window manager
+# Install desktop GUI apps
 brew cask install spectacle
-
-# Install slack
 brew cask install slack
-
-# Install VSCode
+brew cask install brave-browser
+brew cask install spotify
 brew cask install visual-studio-code
+brew cask install hyper
+brew cask install google-cloud-sdk
+brew cask install 1password
+brew cask install tunnelblick
+brew cask install karabiner-elements
+brew cask install spectacle
+brew cask install docker
+brew cask install notion
+
 # Install VSCode extensions
 code --install-extension robertohuertasm.vscode-icons
 code --install-extension vscodevim.vim
@@ -28,12 +35,6 @@ code --install-extension codezombiech.gitignore
 code --install-extension mikestead.dotenv
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ms-vscode.go
-
-# Install brave browser
-brew cask install brave-browser
-
-# Install spotify
-brew cask install spotify
 
 # Install zsh
 brew install zsh
@@ -45,8 +46,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # Overwrite ~/.zshrc
 curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.zshrc -o ~/.zshrc
 
-# Install Hyper terminal
-brew cask install hyper
 # Configure hyper
 curl -s https://raw.githubusercontent.com/timmyers/mac-setup/master/configs/.hyper.js -o ~/.hyper.js
 
@@ -68,57 +67,11 @@ source ~/.zshrc
 brew install jq
 brew install yq
 brew install wget
-brew install pulumi
-brew install terraform
-brew install tfenv
 brew install git
-brew install yarn
 brew install watchman
-brew install golangci/tap/golangci-lint
-brew install azure-cli
-brew install go
-
-# Global npm packages
-yarn global add wscat
-
-# Install gcloud
 brew install gcloud
-
-# Install aws
 brew install awscli
 brew install aws-iam-authenticator
 
-# Install pyenv
-brew install pyenv
-echo "" >> ~/.zshrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
-source ~/.zshrc
-
-# Install google-cloud-sdk
-brew cask install google-cloud-sdk
-
-# Install helm
-brew install kubernetes-helm
-helm init --client-only
-
-# Install kubectl
-brew install kubectl
-brew install k9s
-
-# Install 1password
-brew cask install 1password
-
-# Install tunnelblick
-brew cask install tunnelblick
-
-# Install karabiner
-brew cask install karabiner-elements
-
-# Install spectacle
-brew cask install spectacle
-
-# Install docker
-brew cask install docker
-
-# Install notion
-brew cask install notion
+# Global npm packages
+yarn global add wscat
