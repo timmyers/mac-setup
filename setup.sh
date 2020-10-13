@@ -56,6 +56,7 @@ echo "prompt pure" >> ~/.zshrc
 source ~/.zshrc
 
 # Brew utils
+brew install gh
 brew install jq
 brew install yq
 brew install curl
